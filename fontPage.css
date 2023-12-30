@@ -1,0 +1,164 @@
+
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+}
+
+.container {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: 1fr 1fr;
+    height: 100vh; 
+}
+
+
+header {
+    grid-row: 1;
+    grid-column: span 2;
+    text-align: center;
+    padding: 10px;
+    background-color: #f8f8f8;
+}
+
+.header-image {
+    width: 100%;
+    max-width: 250px; 
+    height: auto;
+}
+
+/* Navigation bar styling */
+.nav-bar {
+    text-align: center;
+    background-color: #333;
+    padding: 10px;
+    font-size: larger;
+}
+
+.nav-bar a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 20px;
+}
+
+.nav-bar a:hover {
+    border-bottom: 2px solid #fff;
+}
+
+
+.new-offer {
+    background-size: cover;
+    background-position: center;
+    color:  white;
+    text-align: start;
+    padding: 50px;
+}
+
+.offer-content {
+    padding: 20px;
+}
+
+.offer-content h2 {
+    font-size: 4em;
+    margin-bottom: 10px;
+}
+
+.offer-content p {
+    font-size: 2.2em;
+    margin-top: 10px;
+}
+
+/* Main content styling */
+main {
+    grid-row: 2;
+    grid-column: span 2;
+    background-color:cornsilk;
+}
+
+.main-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    padding: 20px;
+}
+
+.container-1,
+.container-2,
+.container-3 {
+    text-align: center;
+    background-color:rgb(250, 238, 216);
+    border-radius: 10px;
+    padding: 10px;
+}
+.container-3 img{
+    height: 72%;
+    border-radius: 10px;
+    max-width: 100%;
+
+}
+
+.container-1 img,
+.container-2 img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    padding: 2px;
+}
+a{
+    color: black;
+    margin: 0;
+    padding: 0;
+    font-size:xx-large;
+    text-decoration: solid;
+    font-weight: bold;
+}
+
+/* Footer styling */
+footer {
+    grid-row: 3;
+    grid-column: span 2;
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+}
+.nav-1{
+        text-align:list;
+        background-color: #333;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;  }
+.nav-1 a {
+        color: #fff;
+        text-decoration: none;
+        margin: 0 10px;
+        font-size: small;
+ }
+    
+ .nav-1 a:hover {
+        border-bottom: 2px #fff;
+}
+
+.hide-image {
+    opacity: 0; 
+    transition: opacity 0.5s ease; 
+}
+
+.container.rotate .rotate-image {
+    opacity: 1;
+}
+
+.show-text {
+    display: block;
+    transition: opacity 0.5s ease;
+    opacity: 1;
+}
+
+.container.rotate .show-text {
+    opacity: 0; 
+}
